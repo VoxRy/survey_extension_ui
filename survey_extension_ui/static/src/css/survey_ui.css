@@ -1,0 +1,16 @@
+/* Part of Odoo. See LICENSE file for full copyright and licensing details. */
+
+/* Style for Note question type */
+.o_custom_survey_extensions_note h3 {
+    font-size: 1.5rem !important;
+    margin-top: 2rem !important;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    color: #333;
+}
+
+.o_custom_survey_extensions_note .text-muted {
+    color: #555 !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

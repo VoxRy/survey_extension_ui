@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="survey_question_form" model="ir.ui.view">
+        <field name="name">survey.question.view.form.inherit.survey_extension_ui</field>
+        <field name="model">survey.question</field>
+        <field name="inherit_id" ref="survey.survey_question_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='answers']" position="attributes">
+                <attribute name="attrs">{'invisible': ['|', ('is_page', '=', True), ('question_type', '=', 'note')]}</attribute>
+            </xpath>
+            <xpath expr="//page[@name='options']" position="attributes">
+                <attribute name="attrs">{'invisible': ['|', ('is_page', '=', True), ('question_type', '=', 'note')]}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
